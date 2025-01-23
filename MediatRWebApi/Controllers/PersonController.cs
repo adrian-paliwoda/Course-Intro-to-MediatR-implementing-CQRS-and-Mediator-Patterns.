@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MediatRWebApi.Controllers;
 
-[Route("/api/[controller]")]
 [ApiController]
-public class PersonController : CollectionBase
+[Route("api/[controller]")]
+public class PersonController : ControllerBase
 {
     private readonly IMediator _mediator;
 
@@ -31,12 +31,12 @@ public class PersonController : CollectionBase
     }
 
     [HttpPost]
-    public async Task<Person> InsertPerson([FromBody]string firstName, string lastName)
+    public async Task<Person> InsertPerson([FromBody] InsertPersonCommand person)
     {
-        return await _mediator.Send(new InsertPersonCommand(firstName, lastName));
+        return await _mediator.Send(new InsertPersonCommand(person.FirstName, person.LastName));
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<bool> DeletePerson(int id)
     {
         return await _mediator.Send(new DeletePersonCommand(id));

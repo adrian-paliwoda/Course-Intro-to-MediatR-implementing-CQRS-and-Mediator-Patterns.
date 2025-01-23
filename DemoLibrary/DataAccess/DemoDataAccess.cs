@@ -14,7 +14,7 @@ public class DemoDataAccess : IDataAccess
     {
         people.Add(new Person
         {
-            Id = 1,
+            Id = 0,
             FirstName = "Adrian",
             LasttName = "Paliwoda"
         });
