@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorUI", "BlazorUI\Blazor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{B8C257FB-64F9-4E0E-99BA-B9E63B821A1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRWebApi", "MediatRWebApi\MediatRWebApi.csproj", "{098668C1-928B-47EF-BE4F-D907A6F32ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B8C257FB-64F9-4E0E-99BA-B9E63B821A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8C257FB-64F9-4E0E-99BA-B9E63B821A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8C257FB-64F9-4E0E-99BA-B9E63B821A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098668C1-928B-47EF-BE4F-D907A6F32ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098668C1-928B-47EF-BE4F-D907A6F32ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098668C1-928B-47EF-BE4F-D907A6F32ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098668C1-928B-47EF-BE4F-D907A6F32ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
